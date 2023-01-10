@@ -3,7 +3,7 @@ node {
     stage('Clone') {      
 		steps {
 			echo 'Clone'
-			git branch: 'main', credentialsId: 'ktjt3', url: 'https://github.com/etaejki/jenkins_test.git' 
+			git branch: 'master', credentialsId: 'ktjt3', url: 'https://github.com/etaejki/jenkins_test.git' 
 		}
     }
 
