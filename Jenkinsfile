@@ -3,12 +3,12 @@ node {
     stage ('clone') {
         git 'https://github.com/etaejki/jenkins_test.git' // git clone
     }
-    dir ('sample') { // clone 받은 프로젝트 안의 sample 디렉토리에서 stage 실행
+   // dir ('sample') { // clone 받은 프로젝트 안의 sample 디렉토리에서 stage 실행
         //stage ('sample/execute') {
           stage ('execute') {
             sh './execute.sh'
         }
-    }
+   // }
     stage ('print') {
         print(hello) // 함수 + 변수 사용
     }
